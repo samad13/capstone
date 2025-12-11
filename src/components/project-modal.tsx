@@ -26,7 +26,6 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
 
   if (!project) return null;
 
-  //"https://suinami-yubp.vercel.app/api/generate/tweet",
   
   const mutation = useMutation({
     mutationFn: async (data: {
@@ -35,7 +34,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
       maxGeneration: string;
       twitterHandle: string;
     }) => {
-      const response = await fetch("http://localhost:5000/api/generate/tweet", {
+      const response = await fetch("https://suinami-yubp.vercel.app/api/generate/tweet", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

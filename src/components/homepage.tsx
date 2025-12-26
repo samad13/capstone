@@ -1,11 +1,10 @@
-
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Search, Settings } from "lucide-react";
 import ProjectCarousel from "./project-carousel";
 import ProjectModal from "./project-modal";
 import projects from "../data/giverep_projects.json";
-import image from "../assets/Gemini_Generated_Image_x27hd3x27hd3x27h.png"
+import image from "../assets/Gemini_Generated_Image_x27hd3x27hd3x27h.png";
 
 export default function HomePage() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -36,16 +35,16 @@ export default function HomePage() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <a href="/" className="inline-flex items-center space-x-3 mb-6">
-             <motion.div
+            <motion.div
               whileHover={{ rotate: 360 }}
               transition={{ duration: 1 }}
-              
-            > 
-            
-            <img src={image} alt="RepEasy Logo" className="h-14 w-14 rounded-2xl" />
-           
-          
-            </motion.div> 
+            >
+              <img
+                src={image}
+                alt="RepEasy Logo"
+                className="h-14 w-14 rounded-2xl"
+              />
+            </motion.div>
             <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-cyan-400 to-cyan-400">
               RepEasy
             </h1>
@@ -107,7 +106,7 @@ export default function HomePage() {
       </AnimatePresence>
 
       <footer className="text-center py-6 text-xs text-gray-500 border-t border-white/10">
-        <h2 className="mb-4 text-center text-sm text-gray-800">S13</h2>
+        <h2 className="mb-4 text-center text-sm text-gray-200">S13</h2>
       </footer>
     </main>
   );

@@ -1,6 +1,6 @@
 import { useRef, useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Bookmark, LogIn,  BarChart3 } from "lucide-react";
+import { Menu, X, Bookmark,  BarChart3 } from "lucide-react";
 import AnalyticsModal from "./analytics-modal";
 import { useBookmarksContext, type BookmarkedTweet } from "../hooks/BookmarksContext";
 import BookmarkDetailModal from "./bookmarkDetailModal";

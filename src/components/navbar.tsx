@@ -117,9 +117,7 @@ const bookmarkBtnRef = useRef<HTMLButtonElement>(null);
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              {/* <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-tr from-cyan-400 to-blue-500 shadow-lg shadow-cyan-400/50">
-                <span className="text-white font-bold text-lg">R</span>
-              </div> */}
+            
               <img
                 src={image}
                 alt="RepEasy Logo"
@@ -127,11 +125,10 @@ const bookmarkBtnRef = useRef<HTMLButtonElement>(null);
               />
               <span className="hidden sm:inline text-lg font-bold bg-gradient-to-r from-cyan-400 via-cyan-400 to-cyan-400 bg-clip-text text-transparent">
                 RepEasy
-                {/* text-4xl md:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-cyan-400 to-cyan-400" */}
               </span>
             </motion.a>
 
-            {/* Desktop Navigation */}
+      
             <div className="hidden md:flex items-center gap-1">
               {menuItems.map((item) => (
                 <motion.div key={item.label}>
@@ -157,11 +154,10 @@ const bookmarkBtnRef = useRef<HTMLButtonElement>(null);
               ))}
             </div>
 
-            {/* Right Side - Analytics, Bookmarks, Auth */}
+        
             <div className="flex items-center gap-2 sm:gap-4">
               
 
-              {/* Bookmarks Dropdown */}
               
               <div className="relative group">
                 <motion.button
@@ -178,7 +174,7 @@ const bookmarkBtnRef = useRef<HTMLButtonElement>(null);
                   )}
                 </motion.button>
 
-                {/* Bookmarks Menu */}
+            
                 <AnimatePresence>
                   {isBookmarksOpen && (
                     <motion.div
@@ -230,7 +226,7 @@ const bookmarkBtnRef = useRef<HTMLButtonElement>(null);
               </div>
 
 
-              {/* Mobile Menu Button */}
+            
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
@@ -247,7 +243,7 @@ const bookmarkBtnRef = useRef<HTMLButtonElement>(null);
             </div>
           </div>
 
-          {/* Mobile Menu */}
+        
           <AnimatePresence>
             {isMenuOpen && (
               <motion.div
@@ -280,7 +276,7 @@ const bookmarkBtnRef = useRef<HTMLButtonElement>(null);
                     </motion.div>
                   ))}
 
-                  {/* Mobile Analytics */}
+              
                   {isLoggedIn && (
                     <motion.div
                       initial={{ opacity: 0 }}
@@ -308,19 +304,7 @@ const bookmarkBtnRef = useRef<HTMLButtonElement>(null);
                     </motion.div>
                   )}
 
-                  {/* Mobile Auth Button */}
-                  {!isLoggedIn && (
-                    <motion.button
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                      className="w-full px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-400 to-blue-500 text-white font-medium text-sm hover:shadow-lg hover:shadow-cyan-400/50 transition-shadow mt-4"
-                    >
-                      <span className="flex items-center justify-center gap-2">
-                        <LogIn className="w-4 h-4" />
-                        Sign In
-                      </span>
-                    </motion.button>
-                  )}
+              
                 </div>
               </motion.div>
             )}

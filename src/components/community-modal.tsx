@@ -102,7 +102,7 @@ export default function CommunityModal({
             delay={2}
           />
 
-          {/* Content */}
+    
           <motion.div
             className="relative max-w-4xl w-full max-h-[90vh] overflow-y-auto scrollbar-hide"
             initial={{ y: 60, opacity: 0, scale: 0.9 }}

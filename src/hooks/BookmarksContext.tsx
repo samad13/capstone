@@ -53,13 +53,13 @@ export function BookmarksProvider({ children }: { children: React.ReactNode }) {
       savedAt: new Date().toISOString(),
     };
 
-    setBookmarks((prev) => [newBookmark, ...prev]); // <-- instant UI update
+    setBookmarks((prev) => [newBookmark, ...prev]);
     toast.success("Tweet bookmarked successfully!");
     return newBookmark;
   };
 
   const removeBookmark = (id: string) => {
-    setBookmarks((prev) => prev.filter((b) => b.id !== id)); // <-- instant UI update
+    setBookmarks((prev) => prev.filter((b) => b.id !== id));
     toast.success("Bookmark removed");
   };
 

@@ -31,7 +31,7 @@ export default function ProjectCard({ name, icon, banner,  onClick }: ProjectCar
        <div className="absolute inset-0 bg-black/0 hover:bg-black/20 transition-colors duration-300"></div>
       
 
-      {/* Blue neon ring animation */}
+      
       <div className="absolute inset-0 rounded-xl pointer-events-none opacity-0 hover:opacity-100 transition-opacity duration-300">
         <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-400 opacity-0 hover:opacity-20 blur-lg transition-all duration-700 animate-pulse"></div>
       </div>
@@ -39,10 +39,8 @@ export default function ProjectCard({ name, icon, banner,  onClick }: ProjectCar
         <img src={icon} alt={name} className="h-full w-full object-cover" />
       </div>
       <div className="min-w-0">
-         {/* <h3 className="font-semibold text-primary-foreground text-sm sm:text-base truncate">{name}</h3>  */}
-         {/* <p className="text-xs sm:text-sm text-primary-foreground/70 truncate">@{twitterUsername}</p> */}
       </div>
-    {/* </div> */}
+    
     </motion.div>
   )
 }

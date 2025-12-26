@@ -6,7 +6,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useBookmarksContext } from "../hooks/BookmarksContext";
 
 
-
 interface GenerationCardProps {
   number: number;
   text: string;
@@ -139,11 +138,9 @@ const GeneratedTweetsModal = ({
   tweetType,
   maxGeneration,
 }: GeneratedTweetsModalProps) => {
-  // const {  toggleBookmark, isBookmarked } = useBookmarks();
   const { toggleBookmark, isBookmarked } = useBookmarksContext();
 
  
-
   const handleTweet = (number: number, text: string) => {
     const tweetText = encodeURIComponent(text);
     const twitterUrl = `https://x.com/intent/post?text=${tweetText}`;
